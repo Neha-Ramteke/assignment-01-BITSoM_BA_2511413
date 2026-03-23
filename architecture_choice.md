@@ -1,0 +1,9 @@
+## Architecture Recommendation
+
+I would recommend a **Data Lakehouse** architecture for the food delivery startup. A traditional data warehouse would be too rigid because the startup is collecting highly diverse data types, including GPS location logs, customer text reviews, payment transactions, and restaurant menu images. A pure data lake would provide flexibility, but by itself it may not offer enough structure, governance, and performance for reliable analytics and decision-making. A lakehouse combines the strengths of both.
+
+First, a lakehouse can handle **multiple data formats** efficiently. Structured data such as payment transactions can coexist with semi-structured GPS logs, unstructured text reviews, and image files in the same architecture. Second, it supports **both analytics and machine learning use cases**. The startup may want dashboards for delivery time, payment success rate, and restaurant performance, while also building AI models for customer sentiment analysis, fraud detection, route optimization, or image-based menu classification. A lakehouse is well suited for both workloads.
+
+Third, a lakehouse provides better **data governance and query performance** than a raw data lake. Features such as schema enforcement, ACID-like reliability on analytical tables, and faster SQL querying make it more dependable for business reporting. This is important for a fast-growing startup where data volume, variety, and user needs will expand quickly.
+
+Therefore, a data lakehouse is the best choice because it offers flexibility, scalability, analytical strength, and better operational control in one architecture.
